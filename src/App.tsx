@@ -7,9 +7,19 @@ function App() {
   const dispatch = useAppDispatch()
   return (
     <div className="App">
-      <p>{counter}</p>
-      <button onClick={() => dispatch(increment())}>Increment</button>
-      <button onClick={() => dispatch(decrement())}>Decrement</button>
+      <p className="text-3xl p-6">{counter}</p>
+      <button
+        className="bg-blue-500 mr-6 rounded-lg p-4"
+        onClick={() => dispatch(increment())}
+      >
+        Increment
+      </button>
+      <button
+        className="bg-red-500 rounded-lg p-4"
+        onClick={() => dispatch(decrement())}
+      >
+        Decrement
+      </button>
     </div>
   )
 }
