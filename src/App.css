@@ -2,3 +2,10 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: MonumentGrotesk;
+    src: url(../public/MonumentGrotesk-Regular.ttf);
+}
+*{
+    font-family: MonumentGrotesk;
+}
