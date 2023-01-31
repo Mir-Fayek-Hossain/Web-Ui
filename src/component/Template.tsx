@@ -1,29 +1,32 @@
 import banner from "../assets/banner.png"
+import client from "../assets/client.png"
 function Template() {
   return (
     <div className="">
       <div className=" h-[100vh] bg-black relative">
-        <div className="flex justify-between">
-          <button className="h-fit m-4 text-xl bg-[#d0ff71] py-2 px-4 rounded-r-full rounded-l-full">
+        <div className="">
+          <button className="h-fit m-8 text-base bg-[#d0ff71] py-2 px-7 rounded-r-full rounded-l-full fixed">
             MENU
           </button>
-          <div className=" h-fit float-right text-white">
-            <p className="text-[140px] font-semibold ">Rigorously</p>
-            <div className="flex justify-between h-fit">
-              <p className="text-[140px] font-semibold ">creative</p>
-              <p className=" text-xl self-center mt-8">
+          <div className=" h-fit float-right text-white mr-36">
+            <p className="text-[170px]  ">Rigorously</p>
+            <div className="flex justify-between h-fit leading-3 ">
+              <p className="text-[170px]  ">creative</p>
+              <p className=" text-base self-center tracking-wider ">
                 TOGETHER <br />
                 WE ARE CARTIER
+                <div className="border-0 border-b border-[#d0ff71] w-[60px]"></div>
               </p>
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 w-1/5 m-8 text-white">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur a in accu
+        <div className="absolute bottom-0 left-0 w-1/5 m-8 text-white ">
+          <p className="mb-6 tracking-wide">IDEAS THA TRANSFORM</p>
+          <p className="tracking-wide">
+            We create inventive and long-lasting solutions based on a creative
+            and collaborative equation. Welcome to Cartie
           </p>
-          <p className="text-8xl">CARTIER</p>
+          <p className="text-[88px] font-sans tracking-tight">CARTIER</p>
         </div>
         <div className="absolute bottom-0 right-0 m-8">
           <button className="bg-[#d0ff71] p-4 rounded-full">
@@ -31,7 +34,7 @@ function Template() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-6 h-6"
+              className="w-3 h-3"
             >
               <path
                 fill-rule="evenodd"
@@ -42,130 +45,259 @@ function Template() {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-5 px-5 bg-white w-full ">
-        <p className="text-8xl text-center col-span-2 font-normal my-20">
-          Projects
+      <div className="grid grid-cols-2 gap-5 px-5 py-5 bg-white w-full ">
+        <div className="col-span-2 relative  ">
+          <button className="h-fit m-8 text-base bg-[#d0ff71] py-2 px-7 rounded-r-full rounded-l-full absolute right-3 top-8">
+            See all
+          </button>
+          <p className="text-8xl text-center  font-normal my-20">Projects</p>
+        </div>
+        <p className="text-[17px] tracking-wide w-2/5 leading-5 my-4 pl-6">
+          At CARTIER, we know that the only way we can succeed is by having our
+          clients succeed. And we have understood for a long time that, to
+          ensure this success, we have to do things differently.
         </p>
-        <div>
-          <p className="text-2xl w-2/6 my-5">
-            Rethinking our world and yours every day. We don’t take any half
-            measures.
-          </p>
+        <p className="text-5xl my-5 pr-6">
+          Rethinking our world and yours every day. We don’t take any half
+          measures.
+        </p>
+        <div className="group w-full h-full" id="parent_image_container">
           <img
-            className="object-cover w-full"
+            id="child_image"
+            className="object-cover w-full "
             src="https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
+          <div className="p-4">
+            <p>Ministere de la Justice</p>
+            <div className="p-0 flex items-center h-20">
+              <button className="transition delay-100 duration-300 ease-in-out mr-4 h-fit text-base bg-[#d0ff71] py-1 px-7 rounded-r-full rounded-l-full hidden group-hover:block  ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="currentColor"
+                  className="w-9 h-9"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+              <p className="text-3xl">Ma Langue, Unae fier qure wesad lk</p>
+            </div>
+            <p className=" text-gray-400 w-2/4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+              maiores, adipisci laudantium totam tempore vero quas explicabo
+              quaerat earum eos aut ex doloribus sapiente laborum, sint
+              praesentium. Tempora, odit neque!
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="text-6xl my-5">
-            Rethinking our world and yours every day. We don’t take any half
-            measures.
-          </p>
+        <div className="group w-full h-full" id="parent_image_container">
           <img
-            className="object-cover w-full"
+            id="child_image"
+            className=" object-cover w-full"
             src="https://img.freepik.com/free-photo/beautiful-shot-people-standing-near-waterfall-with-rainbow-side-skogafoss-iceland_181624-27696.jpg?w=996&t=st=1675079248~exp=1675079848~hmac=1e9a5a32c29a5b5dfb6686c2ecdde41e19df5e06cd61bcebdf70f90a704b4a7b"
             alt=""
           />
+          <div className="p-4">
+            <p>Ministere de la Justice</p>
+            <div className="p-0 flex items-center h-20">
+              <button className="transition delay-100 duration-300 ease-in-out mr-4 h-fit text-base bg-[#d0ff71] py-1 px-7 rounded-r-full rounded-l-full hidden group-hover:block  ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="currentColor"
+                  className="w-9 h-9"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+              <p className="text-3xl">Ma Langue, Unae fier qure wesad lk</p>
+            </div>
+            <p className=" text-gray-400 w-2/4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Laboriosam consequatur vitae
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="text-6xl my-5">
-            Rethinking our world and yours every day. We don’t take any half
-            measures.
-          </p>
+        <div className="group w-full h-full" id="parent_image_container">
           <img
-            className="object-cover w-full"
+            id="child_image"
+            className="object-cover w-full "
             src="https://t4.ftcdn.net/jpg/05/25/08/09/360_F_525080936_JEpnKXh2siYKBPpsqd98pbbcIzy4ySKz.jpg"
             alt=""
           />
+          <div className="p-4">
+            <p>Ministere de la Justice</p>
+            <div className="p-0 flex items-center h-20">
+              <button className="transition delay-100 duration-300 ease-in-out mr-4 h-fit text-base bg-[#d0ff71] py-1 px-7 rounded-r-full rounded-l-full hidden group-hover:block  ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="currentColor"
+                  className="w-9 h-9"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+              <p className="text-3xl">Ma Langue, Unae fier qure wesad lk</p>
+            </div>
+            <p className=" text-gray-400 w-2/4">
+              How to Reiasfasflkj a commitment to french
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="text-2xl w-2/6 my-5">
-            Rethinking our world and yours every day. We don’t take any half
-            measures.
-          </p>
+        <div className="group w-full h-full" id="parent_image_container">
           <img
-            className="object-cover w-full"
+            id="child_image"
+            className=" object-cover w-full"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVL6H_Vbwt7Pl2bBiLT1TP-VJopLEZ0FiDGwlE8cvHuUwegCeEgpGe8ksSrkWNl1zYgQs&usqp=CAU"
             alt=""
           />
-        </div>
-        <div>
-          <p className="text-2xl w-2/6 my-5">
-            Rethinking our world and yours every day. We don’t take any half
-            measures.
-          </p>
+          <div className="p-4">
+            <p>Ministere de la Justice</p>
+            <div className="p-0 flex items-center h-20">
+              <button className="transition delay-100 duration-300 ease-in-out mr-4 h-fit text-base bg-[#d0ff71] py-1 px-7 rounded-r-full rounded-l-full hidden group-hover:block  ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="currentColor"
+                  className="w-9 h-9"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+              <p className="text-3xl">Ma Langue, Unae fier qure wesad lk</p>
+            </div>
+            <p className=" text-gray-400 w-2/4">
+              How to Reiasfasflkj a commitment to french
+            </p>
+          </div>
+        </div>{" "}
+        <div className="group w-full h-full" id="parent_image_container">
           <img
-            className="object-cover w-full"
+            id="child_image"
+            className="object-cover w-full "
             src="https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
+          <div className="p-4">
+            <p>Ministere de la Justice</p>
+            <div className="p-0 flex items-center h-20">
+              <button className="transition delay-100 duration-300 ease-in-out mr-4 h-fit text-base bg-[#d0ff71] py-1 px-7 rounded-r-full rounded-l-full hidden group-hover:block  ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="currentColor"
+                  className="w-9 h-9"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+              <p className="text-3xl">Ma Langue, Unae fier qure wesad lk</p>
+            </div>
+            <p className=" text-gray-400 w-2/4">
+              How to Reiasfasflkj a commitment to frenchasf asfda sfasfasfa
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="text-6xl my-5">
-            Rethinking our world and yours every day. We don’t take any half
-            measures.
-          </p>
+        <div className="group w-full h-full" id="parent_image_container">
           <img
-            className="object-cover w-full"
+            id="child_image"
+            className=" object-cover w-full"
             src="https://img.freepik.com/free-photo/beautiful-shot-people-standing-near-waterfall-with-rainbow-side-skogafoss-iceland_181624-27696.jpg?w=996&t=st=1675079248~exp=1675079848~hmac=1e9a5a32c29a5b5dfb6686c2ecdde41e19df5e06cd61bcebdf70f90a704b4a7b"
             alt=""
           />
-        </div>
-        <div>
-          <p className="text-6xl my-5">
-            Rethinking our world and yours every day. We don’t take any half
-            measures.
-          </p>
-          <img
-            className="object-cover w-full"
-            src="https://t4.ftcdn.net/jpg/05/25/08/09/360_F_525080936_JEpnKXh2siYKBPpsqd98pbbcIzy4ySKz.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <p className="text-2xl w-2/6 my-5">
-            Rethinking our world and yours every day. We don’t take any half
-            measures.
-          </p>
-          <img
-            className="object-cover w-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVL6H_Vbwt7Pl2bBiLT1TP-VJopLEZ0FiDGwlE8cvHuUwegCeEgpGe8ksSrkWNl1zYgQs&usqp=CAU"
-            alt=""
-          />
+          <div className="p-4">
+            <p>Ministere de la Justice</p>
+            <div className="p-0 flex items-center h-20">
+              <button className="transition delay-100 duration-300 ease-in-out mr-4 h-fit text-base bg-[#d0ff71] py-1 px-7 rounded-r-full rounded-l-full hidden group-hover:block  ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="currentColor"
+                  className="w-9 h-9"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+              <p className="text-3xl">Ma Langue, Unae fier qure wesad lk</p>
+            </div>
+            <p className=" text-gray-400 w-2/4">
+              How to Reiasfasflkj a commitment to french asda asdasda fasflkj a
+              commitment to french asda asdasda sd How to Reiasfasflkj a
+              commitment to french asda asdasda sd
+            </p>
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-5 gap-y-10 bg-[#d8d7cb] mt-24 p-10">
         <div className="mt-5  flex flex-col justify-between h-full">
           <p className="text-8xl">Expertises</p>
-          <p className="text-xl w-5/12">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi aut
-            minima, autem hic repellat fuga similique facilis optio voluptatibus
-            molestiae corrupti ea aspernatur maxime expedita quae debitis
-            deserunt aliquam inventore?fuga similique facilis optio voluptatibus
-            molestiae corrupti ea aspernatur.
+          <p className="text-xl w-5/12 text-[#242523] leading-5">
+            Understanding the target down to the smallest details and the
+            context as a whole. Understanding the latest trends, without
+            forgetting those that are well established. Understanding what
+            forges a culture, along with what informs behaviours. To be able to
+            offer impactful solutions to our clients, we develop a precise and
+            methodical understanding of their universe and their communities.
           </p>
         </div>
-        <ol className="text-6xl font-semibold mt-5 h-full">
-          <li className="text-[#bfbda8] hover:text-black hover:mr-2 cursor-pointer">
+        <ol className="text-6xl  mt-5 h-full">
+          <li className="transition ease-in-out delay-100 duration-300 text-[#bfbda8] hover:text-black hover:translate-x-5	 cursor-pointer ">
             1. Strategy
           </li>
-          <li className="text-[#bfbda8] hover:text-black hover:mr-2 cursor-pointer">
+          <li className="transition ease-in-out delay-100 duration-300 text-[#bfbda8] hover:text-black hover:translate-x-5	 cursor-pointer ">
             2. Advertising
           </li>
-          <li className="text-[#bfbda8] hover:text-black hover:mr-2 cursor-pointer">
+          <li className="transition ease-in-out delay-100 duration-300 text-[#bfbda8] hover:text-black hover:translate-x-5	 cursor-pointer ">
             3. Media
           </li>
-          <li className="text-[#bfbda8] hover:text-black hover:mr-2 cursor-pointer">
+          <li className="transition ease-in-out delay-100 duration-300 text-[#bfbda8] hover:text-black hover:translate-x-5	 cursor-pointer ">
             4. Data and technologies
           </li>
-          <li className="text-[#bfbda8] hover:text-black hover:mr-2 cursor-pointer">
+          <li className="transition ease-in-out delay-100 duration-300 text-[#bfbda8] hover:text-black hover:translate-x-5	 cursor-pointer ">
             5. Content and social media
           </li>
-          <li className="text-[#bfbda8] hover:text-black hover:mr-2 cursor-pointer">
+          <li className="transition ease-in-out delay-100 duration-300 text-[#bfbda8] hover:text-black hover:translate-x-5	 cursor-pointer ">
             6. Design and branding
           </li>
-          <li className="text-[#bfbda8] hover:text-black hover:mr-2 cursor-pointer">
+          <li className="transition ease-in-out delay-100 duration-300 text-[#bfbda8] hover:text-black hover:translate-x-5	 cursor-pointer ">
             7. Production
           </li>
         </ol>
@@ -210,26 +342,22 @@ function Template() {
               community of creatives who are passionate about ideas that
               transform.
             </p>
-            <button className=" text-xl bg-[#d0ff71] py-2 px-4 rounded-r-full rounded-l-full">
-              Find out about our job
+            <button className=" text-base bg-[#d0ff71] py-2 px-6 rounded-r-full rounded-l-full">
+              Find out about our job openings
             </button>
           </div>
         </div>
-        <div className=" flex">
+        <div className=" flex  justify-end">
           <img
-            className="self-center"
+            className="self-center max-w-[250px] max-h-[250px]"
             src="https://agencecartier.com/wp-content/uploads/2022/08/CARTIER_P6060007-576x576.jpg"
             alt=""
           />
         </div>
       </div>
       <div className="relative h-[400px]">
-        <div className=" absolute w-[300px] z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <img
-            className=" w-full object-cover"
-            src="https://www.freepnglogos.com/uploads/teacher-png/teacher-job-vacancies-gheras-34.png"
-            alt=""
-          />
+        <div className=" absolute w-[500px] z-10 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <img className=" w-full object-cover" src={client} alt="" />
         </div>
         <div className=" grid grid-cols-3 px-10 bg-[#D0FF71] absolute bottom-0 h-[300px]">
           <div className=" flex flex-col justify-center">
